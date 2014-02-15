@@ -1,0 +1,23 @@
+{
+	"name": "griasolutions/gria-github-analytics",
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"url": "https://github.com/griasolutions/gria-lib.git",
+			"type": "git"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"griasolutions/gria-lib": "@dev",
+		"knplabs/github-api": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Application\\Controller\\": "src/application/controllers/",
+			"Application\\Helper\\": "src/application/helpers/",
+			"Application\\Model\\": "src/application/models/",
+			"ApplicationTest\\": "tests/php/"
+		}
+	}
+}
